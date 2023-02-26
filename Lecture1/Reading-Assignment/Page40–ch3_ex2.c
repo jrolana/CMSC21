@@ -1,6 +1,6 @@
 // Print integers and floats in a variety of formats using conversion specifiers.
 
-#include <stdio.h>
+#include <stdio.h> // Gives the program the ability to perform input and output.
 
 // Function main begins program execution.
 int main(void) {
@@ -19,7 +19,7 @@ int main(void) {
     // Prints floats in various formats. It follows the format "%(-)m.pX" where (-) causes left justification, 
     // m specifies the minimum number of characters to display, p specfies the minimum number of digits to appear
     // after the decimal point, and X acts as a placeholder for "f" (fixed decimal) or "e" (exponential form). 
-    // If X is g (can either be in fixed decimal or exponential format), p indicates the maximum indicates the maximum
+    // If X is g (can either be in fixed decimal or exponential format), p indicates the maximum
     // number of significant digits to be displayed. 
     printf("|%10.3f|%10.3e|%-10g|\n", x, x, x);
 

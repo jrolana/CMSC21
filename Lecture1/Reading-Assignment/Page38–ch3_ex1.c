@@ -1,6 +1,6 @@
 // Prints integers and floats to show how the two data types mentioned differ from each other.
 
-#include <stdio.h>
+#include <stdio.h> // Gives the program the ability to perform input and output.
 
 // Function main begins program execution.
 int main(void) {

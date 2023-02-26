@@ -1,5 +1,6 @@
 // Adds two fractions.
-#include <stdio.h>
+
+#include <stdio.h> // Gives the program the ability to perform input and output.
 
 // Function main begins program execution.
 int main(void){
@@ -12,8 +13,8 @@ int main(void){
     printf("Enter second fraction: "); // Prompt for input.
     scanf("%d/%d", &num2, &denom2); // Reads second fraction from user.
 
-    result_num = num1 * denom2 + num2 * denom1; // Calculates the numerator of the sum of a two fractions.
-    result_denom = denom1 * denom2; // Calculates the denominator of the sum of a two fractions.
+    result_num = num1 * denom2 + num2 * denom1; // Calculates the numerator of the sum of the two fractions.
+    result_denom = denom1 * denom2; // Calculates the denominator of the sum of the two fractions.
 
     // Displays the sum of the fractions.
     printf("The sum is %d/%d\n", result_num, result_denom);
