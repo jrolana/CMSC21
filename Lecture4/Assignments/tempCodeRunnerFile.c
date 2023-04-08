@@ -1,0 +1,2 @@
+
+        if (pathway[i]) {
