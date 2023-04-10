@@ -5,21 +5,20 @@ Written in 2023 by Jhoanna Olana.
 */
 #include <stdio.h>
 
+#define SIZE 42
+
 int main(void) {
     // ----- Initialization -----
-
     /*
-    A month calendar can be viewed as a table, with a maximum dimension of 5x7. Furthermore, its empty cells 
-    can be considered containing "0" day. Since we only want a placeholder for the empty cells and cells that 
-    contain month days, we use an 1d array with a size of 35.
-    The use of the other variables will be explained later.
+    A one-month calendar can be viewed as a table, with a maximum dimension of 6x7, thus we can use an array to 
+    create it. Since we only want a placeholder for the empty cells(containing "0" day) and cells that contain 
+    month days, we use an 1d array with a size of 42.
     */
 
     int monthDay, startDay, count, i, j;
-    int month[35] = {0};                        
+    int month[SIZE] = {0};                        
 
     // ----- Reads inputs -----
-
     /*
     Do while validates the data that users entered.
     */
@@ -36,7 +35,6 @@ int main(void) {
     
 
     // ----- Generates the one-month calendar -----
-
     /*
     Starting from the (startDay - 1) index (j), every element in the array will be replaced with 1 to monthdays (i).
     */
@@ -57,7 +55,7 @@ int main(void) {
     */
 
     count = 0;
-    for (i = 0; i < 35; i++) {
+    for (i = 0; i < SIZE; i++) {
 
         if (month[i] == 0) {
             printf("   ");
@@ -70,7 +68,7 @@ int main(void) {
             printf("\n");
             count = 0;
         }
-        
+ 
     }
 
     return 0;

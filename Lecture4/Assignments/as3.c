@@ -8,7 +8,7 @@ int main(void) {
     int i;
 
     /*
-    Prints numbers 1(2^0) to 128(2^7).  In every iteration, the value of i is updated by multiplying its old value 
+    Prints numbers 1(2^0) to 128(2^7). In every iteration, the value of i is updated by multiplying its old value 
     by 2. Unlike in item 1, the initialize and update portions of the loop are all in the same line.
     */
    
