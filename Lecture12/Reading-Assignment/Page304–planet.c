@@ -1,3 +1,5 @@
+// Determines if an inputted string is planet or not based on whether or not it is belonged to the list of planets.
+// Limitation: Case-sensitive. Only considers a string planet when its 1st letter is capitilized.
 #include <stdio.h>
 #include <string.h>
 
@@ -10,6 +12,9 @@ argc = number of words written in command line
 */
 {
     char* planets[] = {"Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"};
+    /*
+    char* arr[] = an array that consists of pointers to strings
+    */
     int i, j;
 
     for (i = 0; i < argc; i++) {
